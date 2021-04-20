@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------ TITULO DEL MENÚ ------------ */
+.menu{
+    width: 100%;
+    height: 15vh;
+    background-color: #ddd;
+}
+.menu .title{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-size: 70px;
+    color: #05fa;
+    text-shadow: 3px 3px 4px #0f0;
+    transition: all .3s;
+    font-family: 'Righteous', cursive;
+}
+.menu .title:hover{
+    font-size: 80px;
+    text-shadow: 4px 4px 6px #0f0;
+}
+
+
+/* ----------- MAIN ------------ */
+
+.contenido-main{
+    display: flex;
+}
+
+
+/* ----------- SECTION ----------- */
+
+.box{
+    width: 70%;
+    height: 100%;
+    background-color: #0af8;
+    padding: 20px;
+}
+.article-1,
+.article-2,
+.article-3{
+    margin-bottom: 20px;
+}
+.box .article-1{
+    width: 100%;
+}
+.box .article-1 .imagen-1{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 65vh;
+}
+.name-article{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+}
+.box .article-2{
+    display: flex;
+}
+.box .article-2 .cajita{
+    width: 50%;
+}
+.box .article-2 .cajita .imagen-2{
+    width: 80%;
+    height: 35vh;
+    display: block;
+    margin: auto;
+}
+.box .article-2 .cajita .imagen-3{
+    width: 80%;
+    height: 35vh;
+    display: block;
+    margin: auto;
+}
+
+.box .article-3 .parrafo{
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+
+/* ---------- ASIDE ---------- */
+
+.contenido-aside{
+    width: 30%;
+    background-color: chartreuse;
+    padding: 20px;
+}
+.box-otro{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.box-otro .imagen-1{
+    width: 100%;
+}
+.box-registro{
+    width: 100%;
+    margin-top: 50px;
+}
+#input-text,
+#input-email,
+#input-tel{
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 55px;
+    border-radius: 15px;
+    border: 4px solid #f00;
+    padding-left: 30px;
+    padding-top: 4px; 
+    background-color: #fff0;  
+    transition: all .4s;
+    outline:none;
+    font-size: 20px;
+}
+#input-text::placeholder,
+#input-email::placeholder,
+#input-tel::placeholder{
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+}
+#input-text:hover,
+#input-email:hover,
+#input-tel:hover{
+    border: 4px solid #f00;
+    background-color: #f00;
+}
+#input-text:focus,
+#input-email:focus,
+#input-tel:focus{
+    background-color: #f00;
+    border: 4px solid #f00;
+}
+.box-registro .enviar{
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 55px;
+    border-radius: 20px;
+    background-color: #0f0c;
+    border:none;
+    box-shadow: 5px 5px 10px #000;
+    transition: all .2s;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+}
+.box-registro .enviar:hover{
+    background-color: #0c0;
+}
+.box-registro .enviar:active{
+    font-size: 23px;
+    width: 49%;
+    height: 53px;
+    box-shadow: 3px 3px 5px #000;
+}
+@media only screen and (max-width: 400px){
+    .contenido-aside{
+        display:none;
+    }
+    .box{
+        width: 100%;
+    }
+    .box .article-1 .imagen-1{
+        width: 100%;
+        height: 35vh;
+    }
+    .menu .title{
+        font-size: 50px;
+        width: 70%;
+        padding-top: 3vh;
+    }
+    .menu .title:hover{
+        font-size: 50px;
+    }
+    .name-article{
+        font-size: 25px;
+    }
+    .box .article-2 .cajita .imagen-2{
+        width: 90%;
+        height: 20vh;
+    }
+    .box .article-2 .cajita .imagen-3{
+        width: 93%;
+        height: 20vh;
+    }
+    .box .article-3 .parrafo{
+        font-size: 25px;
+        font-weight: 600;
+    }
+  }

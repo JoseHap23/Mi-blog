@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fira+Sans+Condensed&family=Righteous&display=swap" rel="stylesheet">
+    <title>Mi blog</title>
+</head>
+<body>
+
+    <!---------- TITULO DEL MENÚ ---------->
+
+    <header>
+        <nav class="menu">
+                <h1 class="title">MI BLOG</h1>
+        </nav>
+    </header>
+
+
+    <!---------- MAIN ---------->
+
+    <main class="contenido-main">
+
+        <!---------- SECTION ---------->
+
+        <section class="box">
+            <article class="article-1">
+                <img class="imagen-1" src="imagenes/desarrollo-web.jpg" alt="desarrollador">
+                <h2 class="name-article">NOMBRE DEL ARTICULO</h2>
+            </article>
+            <article class="article-2">
+                <div class="cajita">
+                    <img class="imagen-2" src="imagenes/paisajewindow.jpg" alt="paisaje de windows">
+                    <h2 class="name-article">ARTICULO 1</h2>
+                </div>
+                <div class="cajita">
+                    <img class="imagen-3" src="imagenes/cultura_paisajeiluminado.jpg" alt="paisaje iluminado">
+                    <h2 class="name-article">ARTICULO 2</h2>
+                </div>
+            </article>
+            <article class="article-3">
+                <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Debitis neque praesentium corporis cumque laboriosam tenetur sit earum doloremque minima natus.
+                Rem ea quis accusamus nisi, neque officiis necessitatibus soluta voluptatem!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aut quisquam provident eius eaque reiciendis quis itaque ad.
+                Eveniet, quibusdam suscipit voluptatum sint cumque dignissimos tempore nam, laboriosam libero tempora facilis!</p> 
+            </article>
+        </section>
+
+
+
+        <aside class="contenido-aside">
+            <div class="box-otro">
+                <img class="imagen-1" src="imagenes/torre-eifel.jpg" alt="la torre eiffel">
+                <h2 class="name-article">OTRO</h2>
+            </div>
+            <div class="box-registro">
+                <h2 class="name-article">RECIBE NOTICIAS</h2>
+                <input type="text" id="input-text" placeholder="Nombre">
+                <input type="email" id="input-email" placeholder="Email">
+                <input type="tel" id="input-tel" placeholder="telefono">
+                <button class="enviar" onclick="myButton()">Enviar</button>
+            </div>
+            
+        </aside>
+    </main>
+
+    <script>
+        function myButton(){
+            alert("Ya puedes recibir noticias!");
+        }
+    </script>
+
+</body>
+</html>
